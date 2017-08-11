@@ -133,6 +133,9 @@ source $BIN_DIR/steps/pip-uninstall
 # Install dependencies with Pip (where the magic happens).
 source $BIN_DIR/steps/pip-install
 
+# Installing tk package directly (dependency for tkinter)
+apt-get install -y python-tk
+
 # Support for NLTK corpora.
 $BIN_DIR/steps/nltk
 
